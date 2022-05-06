@@ -33,7 +33,6 @@ Here are all the samples which are deployed on Microsoft Azure and you can try i
 |20|People picker control in Adaptive Cards | This sample shows the feature of people picker control in Adaptive Cards.|[View](/demo%20manifest/People-Picker-Adaptive-Card.zip) |
 |21|App complete auth|This sample demos authentication feature in bot,tab and messaging extension.|[View](/demo%20manifest/App-Complete-Auth.zip) |
 |22|Meeting signing programmatic share to stage|Demonstrating the programmatic share to stage feature, by means of a document signing in a meeting. |[View](/demo%20manifest/Meeting-Share-To-Stage-Signing.zip) |
-|23|Tab people picker|This is an tab app which shows the feature of client sdk people picker. |[View](/demo%20manifest/Tab-People-Picker.zip) |
 ## [Samples built using new generation of Teams development tool - Teams Toolkit](https://github.com/OfficeDev/TeamsFx-Samples)
 
 The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) is an extension on Visual Studio Code and Visual Studio. It enable Teams developers to create and deploy Teams apps with integrated identity, access to cloud storage, data from Microsoft Graph, and other services in Azure and M365 with a "zero-configuration" approach to the developer experience. And [Sample Apps](https://github.com/OfficeDev/TeamsFx-Samples) are provided in Teams Toolkit. Download and try it by today! [Learn more about Teams Toolkit](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-code-overview).
@@ -65,7 +64,6 @@ The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDev
 |15|Create Conversational tab     | Microsoft Teams tab sample app for demonstrating create conversation tab | [View][tab-conversation#csharp]          |           |[View][tab-conversation#nodejs]
 |16| Product inspection | Demonstrating a feature where user can scan a product and mark it as approved/rejected. |[View][tab-product-inspection#csharp]|[View][productinspection#nodejs]|
 |17| Staggered Permission | This sample demos to get staggered graph api permissions. |[View][tab-staggered-permission#csharp]|[View][tab-staggered-permission#nodejs]|
-|18| Tab people picker | This is an tab app which shows the feature of client sdk people picker. |[View][tab-people-picker#csharp]||
 
 ## [Bots samples](https://docs.microsoft.com/microsoftteams/platform/bots/what-are-bots) (using the v4 SDK)
 >NOTE:
@@ -88,7 +86,8 @@ The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDev
 |13|  Type ahead search control on Adaptive Cards | This sample shows the feature of type ahead search (static and dynamic) control in Adaptive Cards. |[View][typeaheadsearch#csharp]|[View][typeaheadsearchonadaptivecard#js]
 |14|  People picker control in Adaptive Cards | This sample shows the feature of people picker control in Adaptive Cards. |[View][peoplepickeronadaptivecard#csharp]|[View][peoplepickeronadaptivecard#js]
 |15|  Proactive Messaging sample | This sample shows how to save user's conversation reference information to send proactive reminder message using Bots. This uses Teams toolkit for Visual Stuido Code to provide scafolding experience. ||[View][bot-proactive-msg-teamsfx#js]
-|16|  Suggested Actions Bot | This sample shows the feature where user can send suggested actions using bot. |[View][suggestedactionsbot#csharp]|
+|16|  Suggested Actions Bot | This sample shows the feature where user can send suggested actions using bot. ||[View][suggestedactionsbot#nodejs]
+
 #### Additional samples
 
 |    | Sample Name | Description | .NET Core | JavaScript | 
@@ -214,7 +213,6 @@ The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDev
 [tab-stage-view#csharp]:samples/tab-stage-view/csharp
 [tab-product-inspection#csharp]:samples/tab-product-inspection/csharp
 [tab-staggered-permission#csharp]:samples/tab-staggered-permission/csharp
-[tab-people-picker#csharp]:samples/tab-people-picker/csharp
 [tab-request-approval#nodejs]:samples/tab-request-approval/nodejs
 [bot-request-approval#nodejs]:samples/bot-request-approval/nodejs
 
@@ -287,7 +285,6 @@ The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDev
 [typeaheadsearchonadaptivecard#js]:samples/bot-type-ahead-search-adaptive-cards/nodejs
 [meetings-live-code-interview#csharp]:samples/meetings-live-code-interview/csharp
 [meetings-live-code-interview#nodejs]:samples/meetings-live-code-interview/nodejs
-[suggestedactionsbot#csharp]:samples/bot-suggested-actions/csharp
 
 [app-localization#cs]:samples/app-localization/csharp
 [app-localization#js]:samples/app-localization/nodejs
