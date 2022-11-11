@@ -851,6 +851,10 @@ jobs:
               name: 'bot-formatting-cards'
               version: '18.x'
 
+            - project_path: 'samples/app-cache-meetings/nodejs'
+              name: 'app-cache-meetings'
+              version: '16.x'
+
       fail-fast: false
     name: Build all "${{ matrix.name }}" nodejs
     defaults:
