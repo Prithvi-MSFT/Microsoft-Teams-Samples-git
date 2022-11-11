@@ -220,6 +220,7 @@ The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDev
 [tab-channel-group=config-csharp]:samples/tab-channel-group-config-page-auth/csharp
 [tab-channel-context#nodejs]:samples/tab-channel-context/nodejs
 [tab-app-monetization#nodejs]:samples/tab-app-monetization/nodejs
+[app-cache-meetings#nodejs]:samples/app-cache-meetings/nodejs
 [tab-request-approval#nodejs]:samples/tab-request-approval/nodejs
 [bot-request-approval#nodejs]:samples/bot-request-approval/nodejs
 [tab-navbar-menu#ts]:samples/tab-navbar-menu/ts
