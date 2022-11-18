@@ -253,6 +253,25 @@ namespace CallingBotSample.Bots
 
                 var recordingLocation = await teamsRecordingService.DownloadRecording(recording.RecordingLocation, recording.RecordingAccessToken);
 
+                try
+                {
+                    var callDetails = callService.Get(callId);
+                    var result = await speechService.ConvertWavToText(recordingLocation);
+
+                    if (result.Reason == ResultReason.RecognizedSpeech)
+                    {
+                        var threadId = (await callDetails)?.ChatInfo?.ThreadId;
+                        if (threadId != null)
+                        {
+                            await botService.SendToConversation($"You said: {result.Text}", threadId);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    logger.LogError(ex, "Failure converting speech to text.");
+                }
+
                 await callService.PlayPrompt(
                     GetCallIdFromNotification(args),
                     new MediaInfo
