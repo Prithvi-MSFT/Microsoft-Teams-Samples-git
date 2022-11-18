@@ -7,12 +7,15 @@ using System.Net;
 using System.Threading.Tasks;
 using CallingBotSample.Authentication;
 using CallingBotSample.Options;
+using CallingBotSample.Services.BotFramework;
+using CallingBotSample.Services.CognitiveServices;
 using CallingBotSample.Services.MicrosoftGraph;
 using CallingBotSample.Services.TeamsRecordingService;
 using CallingBotSample.Utility;
 using CallingMeetingBot.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Bot.Builder;
+using Microsoft.CognitiveServices.Speech;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -46,6 +49,8 @@ namespace CallingBotSample.Bots
         ITeamsRecordingService teamsRecordingService,
         IGraphLogger graphLogger,
         IMemoryCache callBotCache,
+        ISpeechService speechService,
+        IBotService botService,
         IOptions<BotOptions> botOptions,
         ILogger<CallingBot> logger)
         {
@@ -55,6 +60,8 @@ namespace CallingBotSample.Bots
             this.teamsRecordingService = teamsRecordingService;
             this.graphLogger = graphLogger;
             this.callBotCache = callBotCache;
+            this.speechService = speechService;
+            this.botService = botService;
             this.logger = logger;
 
             var name = this.GetType().Assembly.GetName().Name;
@@ -143,6 +150,25 @@ namespace CallingBotSample.Bots
                 }
 
                 var recordingLocation = await teamsRecordingService.DownloadRecording(recording.RecordingLocation, recording.RecordingAccessToken);
+
+                try
+                {
+                    var callDetails = callService.Get(callId);
+                    var result = await speechService.ConvertWavToText(recordingLocation);
+
+                    if (result.Reason == ResultReason.RecognizedSpeech)
+                    {
+                        var threadId = (await callDetails)?.ChatInfo?.ThreadId;
+                        if (threadId != null)
+                        {
+                            await botService.SendToConversation($"You said: {result.Text}", threadId);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    logger.LogError(ex, "Failure converting speech to text.");
+                }
 
                 await callService.PlayPrompt(
                     callId,
