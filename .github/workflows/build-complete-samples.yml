@@ -380,6 +380,18 @@ jobs:
               name: 'msgext-search'
               version: '6.0.x'
 
+            - project_path: 'samples/bot-tab-conversations/csharp/Source/ConversationalTabs.Web/Microsoft.Teams.Samples.ConversationalTabs.Web.csproj'
+              name: 'bot-tab-conversations'
+              version: '6.0.x'      
+                    
+            - project_path: 'samples/msteams-application-resourcehub/Source/microsoft-teams-apps-selfhelp/Microsoft.Teams.Apps.Selfhelp.csproj'
+              name: 'msteams-application-resourcehub'
+              version: '6.0.x' 
+
+            - project_path: 'samples/outgoing-webhook/csharp/WebhookSampleBot.csproj'
+              name: 'outgoing-webhook'
+              version: '6.0.x' 
+
             - project_path: 'samples/msteams-application-qbot/Source/Microsoft.Teams.App.Domain/Microsoft.Teams.Apps.QBot.Domain.csproj'
               name: 'msteams-application-qbot'
               version: '2.0'
