@@ -687,6 +687,10 @@ jobs:
               name: 'outgoing-webhook'
               version: '14.x'
 
+            - project_path: 'samples/bot-proactive-messaging-teamsfx'
+              name: 'bot-proactive-messaging-teamsfx'
+              version: '14.x'              
+
             - project_path: 'samples/app-auth/nodejs'
               name: 'app-auth'
               version: '16.x'
@@ -718,10 +722,6 @@ jobs:
             - project_path: 'samples/bot-suggested-actions/nodejs'
               name: 'bot-suggested-actions'
               version: '16.x'
-
-            - project_path: 'samples/bot-task-module/nodejs'
-              name: 'bot-task-module'
-              version: '16.x' 
 
             - project_path: 'samples/bot-task-module/nodejs'
               name: 'bot-task-module'
