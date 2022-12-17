@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -14,8 +14,29 @@
     <PackageReference Include="Microsoft.Identity.Client" Version="4.48.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ClientApp\" />
-  </ItemGroup>
+		<!-- Include the newly-built files in the publish output -->
+		<ItemGroup>
+			<DistFiles Include="$(SpaRoot)build\**; $(SpaRoot)build-ssr\**" />
+			<ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+				<RelativePath>%(DistFiles.Identity)</RelativePath>
+				<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+			</ResolvedFileToPublish>
+		</ItemGroup>
+	</Target>
 
+	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+		<TypeScriptTarget>ES5</TypeScriptTarget>
+		<TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+		<TypeScriptModuleKind />
+		<TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+		<TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+		<TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+		<TypeScriptOutFile />
+		<TypeScriptOutDir />
+		<TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+		<TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+		<TypeScriptSourceMap>True</TypeScriptSourceMap>
+		<TypeScriptMapRoot />
+		<TypeScriptSourceRoot />
+	</PropertyGroup>
 </Project>
