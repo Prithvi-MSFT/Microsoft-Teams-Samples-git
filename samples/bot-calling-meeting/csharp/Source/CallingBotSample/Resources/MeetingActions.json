@@ -19,7 +19,8 @@
         "action": "transfercall",
         "msteams": {
           "type": "task/fetch"
-        }
+        },
+        "callId": "${callId}"
       }
     },
     {
@@ -30,7 +31,8 @@
         "action": "inviteparticipant",
         "msteams": {
           "type": "task/fetch"
-        }
+        },
+        "callId": "${callId}"
       }
     },
     {
