@@ -16,7 +16,7 @@ server.use(express.urlencoded({
 // See https://aka.ms/bot-services to learn more about the different parts of a bot.
 const { BotFrameworkAdapter } = require('botbuilder');
 
-const { TeamsBot } = require('./bots/teamsBot');
+const { SuggestedActionsBot } = require('./bots/suggestedActionsBot');
 
 // Create adapter.
 // See https://aka.ms/about-bot-adapter to learn more about adapters.
@@ -39,9 +39,8 @@ adapter.onTurnError = async (context, error) => {
         'https://www.botframework.com/schemas/error',
         'TurnError'
     );
-
-    // Uncomment this for local debugging.
-   //  await context.sendActivity(`Sorry, it looks like something went wrong. Exception Caught: ${error}`);
+     // Uncomment this for local debugging.
+    //  await context.sendActivity(`Sorry, it looks like something went wrong. Exception Caught: ${error}`);
 
     // Send a message to the user
     await context.sendActivity('The bot encountered an error or bug.');
@@ -49,7 +48,7 @@ adapter.onTurnError = async (context, error) => {
 };
 
 // Create the bot that will handle incoming messages.
-const bot = new TeamsBot();
+const bot = new SuggestedActionsBot();
 
 server.listen(PORT, () => {
     console.log(`Server listening on http://localhost:${PORT}`);
