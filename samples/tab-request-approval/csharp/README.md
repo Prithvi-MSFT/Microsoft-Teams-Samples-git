@@ -149,6 +149,8 @@ Please find below demo manifest which is deployed on Microsoft Azure and you can
 
 **Note:** App should be installed for user's manager also to get task approval notification.
 
+Note:- If you are facing any issue in your app,  [please uncomment this line](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/tab-request-approval/csharp/TabRequestApproval/AdapterWithErrorHandler.cs#L26) and put your debugger for local debug.
+
 ## Running the sample
 
 User Persona:
