@@ -163,6 +163,7 @@ Please find below demo manifest which is deployed on Microsoft Azure and you can
    - Select Add in the pop-up dialog box. Your app is uploaded to Teams.
 
 - Note: To test facebook auth flow please setup the sample locally as due to limitations from facebook you cannot test the facebook auth flow in the deployed version of app.
+- If you are facing any issue in your app,  [please uncomment this line](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/app-complete-auth/nodejs/index.js#L68) and put your debugger for local debug.
 
 ## Running the sample
 
