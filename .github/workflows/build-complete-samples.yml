@@ -863,6 +863,10 @@ jobs:
               name: 'bot-types-of-cards'
               version: '18.x'
 
+            - project_path: 'samples/meeting-tabs/nodejs'
+              name: 'meeting-tabs'
+              version: '16.x'
+
       fail-fast: false
     name: Build all "${{ matrix.name }}" nodejs
     defaults:
