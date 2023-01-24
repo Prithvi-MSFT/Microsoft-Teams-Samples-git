@@ -320,6 +320,8 @@ The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDev
 [qrjointeam#csharp]:samples/bot-join-team-using-qr-code/csharp
 [qrjointeam#nodejs]:samples/bot-join-team-using-qr-code/nodejs
 [incoming-webhook#nodejs]:samples/incoming-webhook/nodejs
+[meetingtabs#csharp]:samples/meeting-tabs/csharp
+[meetingtabs#nodejs]:samples/meeting-tabs/nodejs
 
 [graph#rsc#cs]:samples/graph-rsc/csharp
 [graph#rsc#js]:samples/graph-rsc/nodeJs
