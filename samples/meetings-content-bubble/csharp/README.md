@@ -97,6 +97,13 @@ Message the Bot by @ mentioning to interact with the content bubble.
 
 ![Feedback card](ContentBubble/Images/FeedbackCard.png)
 
+
+## Send targeted meeting notification
+![Meeting card](ContentBubble/Images/MeetingCard.png)
+
+![Target notification](ContentBubble/Images/TargetNotification.png)
+
+
 ## Further Reading
 
 - [Meeting apps APIs](https://learn.microsoft.com/microsoftteams/platform/apps-in-teams-meetings/meeting-apps-apis?tabs=dotnet)
