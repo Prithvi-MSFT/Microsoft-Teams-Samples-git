@@ -135,6 +135,8 @@ The app uses the Teams extensibility features described on the following pages:
 - Enable developer preview in your desktop Teams client
 Follow [these instructions](https://docs.microsoft.com/microsoftteams/platform/resources/dev-preview/developer-preview-intro#enable-developer-preview) to enable developer preview. Note that Developer preview mode must be enabled on each Teams client app or browser.
 
+Note: Open the meeting chat section and type @MeetingTokenApp Hello (It will send back the required information to you).
+
 > In-meeting tabs are only available in the Teams desktop client. They will not be visible when you run Teams in a web browser.
 
 - Sideload the app in a Teams desktop client
@@ -156,6 +158,8 @@ Follow [these instructions](https://docs.microsoft.com/microsoftteams/platform/r
  - Skip the current token for the organizer of the meeting
 
  ![config_page](Images/config_page.png)
+
+ ![chat_page](Images/chat_meeting_tab.png)
 
  ![pre_meeting_tab](Images/pre_meeting_tab.png)
 
