@@ -276,7 +276,7 @@ The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDev
 [apps-in-meeting#cs]:samples/apps-in-meeting/csharp
 [meetings-token-app#js]:samples/meetings-token-app/nodejs
 [region-selection-app#cs]: samples/app-region-selection/csharp  
-[meetings-content-bubble#cs]:samples/meetings-content-bubble/csharp
+[meetings-notification#cs]:samples/meetings-notification/csharp
 [meetings-sidepanel#cs]:samples/meetings-sidepanel/csharp
 [meetings-sidepanel#js]:samples/meetings-sidepanel/nodejs
 [meetings-context-app#csharp]:samples/meetings-context-app/csharp
