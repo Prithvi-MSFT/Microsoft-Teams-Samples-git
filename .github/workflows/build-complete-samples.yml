@@ -859,6 +859,10 @@ jobs:
               name: 'app-cache-meetings'
               version: '18.x'
 
+            - project_path: 'samples/tab-deeplink-features/nodejs'
+              name: 'tab-deeplink-features'
+              version: '18.x'
+
             - project_path: 'samples/bot-types-of-cards/nodejs'
               name: 'bot-types-of-cards'
               version: '18.x'
