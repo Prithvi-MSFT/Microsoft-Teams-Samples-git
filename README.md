@@ -358,6 +358,8 @@ The [Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDev
 [tab-people-picker#nodejs]:samples/tab-people-picker/nodejs
 [meetings-live-caption#cs]:samples/meetings-live-caption/csharp
 [meetings-live-caption#nodejs]:samples/meetings-live-caption/nodejs
+[app-anonymous-users#cs]:samples/app-anonymous-users/csharp
+
 
 [msteams-app-qbot]:samples/msteams-application-qbot/
 [graph-bulk-meetings#cs]:samples/graph-bulk-meetings/csharp
